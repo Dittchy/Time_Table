@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RGPV CD Branch Exam Study Plan</title>
+    <style>
+        @page { size: A4; margin: 1cm; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; }
+        .header { text-align: center; padding: 10px; background: #2c3e50; color: white; }
+        h1 { color: #3498db; text-align: center; }
+        h2 { color: #2980b9; border-bottom: 2px solid #3498db; padding-bottom: 5px; }
+        .calendar { display: grid; grid-template-columns: repeat(11, 1fr); gap: 5px; margin-bottom: 20px; }
+        .day { border: 1px solid #ddd; padding: 10px; text-align: center; background: #f8f9fa; }
+        .current { background: #e3f2fd; font-weight: bold; }
+        .exam-day { background: #ffebee; }
+        .plan-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px; }
+        .subject-card { border: 1px solid #bdc3c7; border-radius: 8px; padding: 15px; margin-bottom: 15px; }
+        .cd401 { border-left: 5px solid #e74c3c; }
+        .cd402 { border-left: 5px solid #3498db; }
+        .cd403 { border-left: 5px solid #2ecc71; }
+        .cd404 { border-left: 5px solid #f39c12; }
+        .cd405 { border-left: 5px solid #9b59b6; }
+        .revision { border-left: 5px solid #1abc9c; }
+        .priority { background: #fff8e1; padding: 5px; font-weight: bold; }
+        .deadline { background: #ffccbc; padding: 2px 5px; border-radius: 3px; }
+        table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+        th { background: #3498db; color: white; }
+        td, th { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        .break { background: #f5f5f5; color: #7f8c8d; }
+        .code { background: #e8f5e9; }
+        .theory { background: #e3f2fd; }
+        footer { text-align: center; margin-top: 30px; font-size: 0.9em; color: #7f8c8d; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>RGPV CD Branch - Final Exam Study Plan</h1>
+        <h2>July 4 - July 14, 2025 (11 Days Intensive)</h2>
+    </div>
+
+    <!-- Calendar Overview -->
+    <div class="calendar">
+        <div class="day current">Jul 4<br>CD401</div>
+        <div class="day">Jul 5<br>CD401</div>
+        <div class="day">Jul 6<br>CD401</div>
+        <div class="day">Jul 7<br>CD402</div>
+        <div class="day">Jul 8<br>CD402</div>
+        <div class="day">Jul 9<br>CD403</div>
+        <div class="day">Jul 10<br>CD404</div>
+        <div class="day">Jul 11<br>CD405</div>
+        <div class="day">Jul 12<br>Rev CD402</div>
+        <div class="day">Jul 13<br>Rev CD401</div>
+        <div class="day exam-day">Jul 14<br>Rev CD401</div>
+    </div>
+
+    <!-- Detailed Plan -->
+    <div class="plan-grid">
+        <!-- CD401 Block -->
+        <div class="subject-card cd401">
+            <h3>CD401: Discrete Structures & Linear Algebra</h3>
+            <p class="deadline">FIRST EXAM: July 15</p>
+            <div class="priority">Priority: ★★★★★ (3 Days + 2 Revision Days)</div>
+            <table>
+                <tr><th>Date</th><th>Focus Areas</th><th>Hours</th></tr>
+                <tr><td>July 4</td><td>Set Theory, Relations, Functions</td><td>12h</td></tr>
+                <tr><td>July 5</td><td>Logic, Graph Theory, Matrices</td><td>12h</td></tr>
+                <tr><td>July 6</td><td>Hypothesis Testing + Practice</td><td>12h</td></tr>
+                <tr><td>July 13</td><td>Revision: Core Concepts</td><td>12h</td></tr>
+                <tr><td>July 14</td><td>Final Drill: Proofs & Problems</td><td>12h</td></tr>
+            </table>
+            <p>Key Targets: 20 identity proofs • 5 SVD problems • Truth tables • Graph coloring</p>
+        </div>
+
+        <!-- CD402 Block -->
+        <div class="subject-card cd402">
+            <h3>CD402: Analysis & Design of Algorithms</h3>
+            <p class="deadline">Exam: July 19</p>
+            <table>
+                <tr><th>Date</th><th>Focus Areas</th><th>Hours</th></tr>
+                <tr><td>July 7</td><td>Sorting Algorithms, Greedy Methods</td><td>12h</td></tr>
+                <tr><td>July 8</td><td>Dynamic Programming, NP-Completeness</td><td>12h</td></tr>
+                <tr><td>July 12</td><td>Revision: Code Implementation</td><td>12h</td></tr>
+            </table>
+            <p>Key Targets: Code 4 sorting algos • Solve knapsack • MST implementations</p>
+        </div>
+
+        <!-- Other Subjects -->
+        <div class="subject-card cd403">
+            <h3>CD403: Software Engineering</h3>
+            <p class="deadline">Exam: July 24</p>
+            <table>
+                <tr><th>Date</th><th>Focus Areas</th><th>Hours</th></tr>
+                <tr><td>July 9</td><td colspan="2">Full syllabus in 12h: Process Models > Testing > Maintenance</td></tr>
+            </table>
+            <p>Key Targets: Agile vs RUP • SRS drafting • Black-box testing</p>
+        </div>
+
+        <div class="subject-card cd404">
+            <h3>CD404: Introduction to Data Science</h3>
+            <p class="deadline">Exam: July 29</p>
+            <table>
+                <tr><th>Date</th><th>Focus Areas</th><th>Hours</th></tr>
+                <tr><td>July 10</td><td colspan="2">Full syllabus in 12h: EDA > Regression > Model Evaluation</td></tr>
+            </table>
+            <p>Key Targets: Pandas EDA • Regression models • Cross-validation</p>
+        </div>
+
+        <div class="subject-card cd405">
+            <h3>CD405: Operating Systems</h3>
+            <p class="deadline">Exam: August 2</p>
+            <table>
+                <tr><th>Date</th><th>Focus Areas</th><th>Hours</th></tr>
+                <tr><td>July 11</td><td colspan="2">Units 1-4 in 12h: Scheduling > Memory > File Systems</td></tr>
+            </table>
+            <p>Key Targets: CPU scheduling code • Banker's algorithm • Page replacement</p>
+        </div>
+    </div>
+
+    <!-- Daily Schedule Template -->
+    <h2>Recommended Daily Structure (July 4-14)</h2>
+    <table>
+        <tr><th>Time</th><th>Activity</th><th>Subject Focus</th></tr>
+        <tr><td>6:00 - 9:00 AM</td><td class="theory">New Concepts (Peak Focus)</td><td>High-yield theory</td></tr>
+        <tr><td>9:00 - 9:30 AM</td><td class="break">Breakfast Break</td><td>-</td></tr>
+        <tr><td>9:30 - 12:30 PM</td><td class="theory">Problem Solving</td><td>Numerical practice</td></tr>
+        <tr><td>12:30 - 2:00 PM</td><td class="break">Lunch + Rest</td><td>-</td></tr>
+        <tr><td>2:00 - 5:00 PM</td><td class="code">Coding Practice</td><td>Algorithms/DS experiments</td></tr>
+        <tr><td>5:00 - 5:30 PM</td><td class="break">Snack Break</td><td>-</td></tr>
+        <tr><td>5:30 - 8:30 PM</td><td class="theory">Revision + Flashcards</td><td>Active recall</td></tr>
+        <tr><td>8:30 - 10:00 PM</td><td class="break">Dinner + Relax</td><td>-</td></tr>
+        <tr><td>10:00 PM</td><td class="break">Sleep</td><td>-</td></tr>
+    </table>
+
+    <!-- Critical Reminders -->
+    <h2>Exam Strategy & Critical Reminders</h2>
+    <div class="subject-card revision">
+        <ul>
+            <li><strong>July 15 (Discrete Math):</strong> Attempt matrix problems first (Cholesky/SVD)</li>
+            <li><strong>Skip Low-Yield Topics:</strong>
+                <ul>
+                    <li>OS: Device drivers/RPC</li>
+                    <li>SE: Reverse engineering details</li>
+                    <li>Algorithms: Branch & bound proofs</li>
+                </ul>
+            </li>
+            <li><strong>Last-Minute Tips (July 14):</strong>
+                <ul>
+                    <li>Review Discrete Math formula sheet</li>
+                    <li>Practice 2 identity proofs</li>
+                    <li>Memorize matrix decomposition steps</li>
+                </ul>
+            </li>
+            <li><strong>Resources:</strong>
+                <ul>
+                    <li>Algorithms: VisuAlgo.net for animations</li>
+                    <li>Math: Rosen's Discrete Mathematics textbook</li>
+                    <li>OS: GATE MCQ banks (free online)</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>RGPV CD Branch Exam Preparedness Plan • Generated on July 3, 2025</p>
+        <p>Total Study Hours: 120+ | Discrete Math Focus: 60 hours</p>
+    </footer>
+</body>
+</html>
